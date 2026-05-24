@@ -4,14 +4,17 @@ phases:
   install:
     runtime-versions:
       python: 3.11
+
   pre_build:
     commands:
       - echo Installing dependencies...
       - pip install --upgrade pip
+
   build:
     commands:
       - echo Build started on `date`
       - echo Running build...
+
   post_build:
     commands:
       - echo Build completed on `date`
